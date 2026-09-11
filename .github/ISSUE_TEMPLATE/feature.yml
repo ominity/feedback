@@ -1,0 +1,70 @@
+name: "✨ Feature request"
+description: "Suggest an improvement or a new feature for Ominity"
+title: "[Feature] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping us improve Ominity.
+
+        Before submitting, please check whether a similar request already exists. If it does, adding your use case or reacting to the existing issue is usually more useful than creating a duplicate.
+
+        > This repository is public. Please do not include confidential, personal, or otherwise sensitive information.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: "What problem would this solve?"
+      description: "Describe the problem or limitation you are experiencing."
+      placeholder: "I would like to... because currently..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: "What would you like to see?"
+      description: "Describe the feature or improvement you have in mind. Focus on the desired outcome rather than implementation details."
+      placeholder: "It would be useful if Ominity could..."
+    validations:
+      required: true
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: "Area"
+      description: "Which part of Ominity is this related to?"
+      options:
+        - Content
+        - Commerce
+        - Bookings
+        - Customers
+        - Orders
+        - Payments
+        - Invoicing
+        - Administration / Settings
+        - API
+        - Storefront / Website
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: "Current workaround or alternatives"
+      description: "If applicable, tell us how you currently solve this problem."
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: "Additional context"
+      description: "Add examples, screenshots, mockups, links, or anything else that helps explain the request."
+
+  - type: checkboxes
+    id: sensitive
+    attributes:
+      label: "Sensitive information"
+      options:
+        - label: "I have checked that this request does not contain confidential, personal, or other sensitive information."
+          required: true
